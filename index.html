@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Button</title>
+</head>
+<body>
+    <button id="whatsapp-button">Open WhatsApp</button>
+
+    <script>
+        document.getElementById("whatsapp-button").addEventListener("click", function () {
+            window.location.href = "https://api.whatsapp.com/send?phone=971556953400;
+        });
+    </script>
+</body>
+</html>
+<style>
+    body {
+        text-align: center;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #25d366; /* WhatsApp green */
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #128C7E; /* Darker green on hover */
+    }
+</style>
